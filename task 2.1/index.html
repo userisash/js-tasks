@@ -10,10 +10,15 @@
 
     <p id="demo"></p>
     <script>
-    function thisfunc(){
-        console.log("spain has 47 million people and it's capital is madrid");
+    function thisfunc(country, population, capital){
+        console.log(country);
+        console.log(population);
+        console.log(capital);
     }
-    document.getElementById('demo').innerHTML = thisfunc();
+    
+    thisfunc('spain has');
+    thisfunc('47 million people');
+    thisfunc("and it's capital city is madrid");
     </script>
 </body>
 </html>
