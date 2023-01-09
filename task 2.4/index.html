@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 2.4</title>
+</head>
+<body>
+    <script>
+        const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+        const day = ["Monday"];
+
+       let today = new Date();
+       let dd = day[today.getDay];
+       let dayOfMonth = today.getDate();
+       let mm = month[today.getMonth()];
+       let year = today.getFullYear();
+
+       today = "today is " + day + " the " + dayOfMonth + " of " + mm +" "+ year;
+       document.write(today);
+
+
+    </script>
+</body>
+</html>
