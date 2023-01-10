@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 6.2</title>
+</head>
+<body>
+    <script>
+        const people = ["Greg", "Mary", "Devon", "James"];
+        people.pop('james');
+        people.push('ashraf');
+        people.shift('Greg');
+        people.unshift('Matt');
+
+        const pops = people.slice(2, 4);
+        people.indexOf('Mary');
+        people.indexOf('foo');
+
+        people.splice(3,1, 'james');
+        people.splice(2,1, '"Elizabeth', 'Artie');
+        people.splice(0,0, 'Greg');
+
+        const withbob = people;
+        withbob.concat(people);
+    </script>
+</body>
+</html>
