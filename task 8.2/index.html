@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8.2</title>
+</head>
+<body>
+    <script>
+        const mycountry = {
+            country: 'yemen',
+            capital: 'sanaa',
+            language: 'Arabic',
+            population: '32 million',
+            neighbours :['saudiArabia', 'oman'],
+            descripe(){
+             const {
+                country,
+                capital,
+                language,
+                population,
+                neighbours
+            } = this
+            console.log('${ country} has ${population} people and thier mother tongue is ${language} they have ${neighbours} as thier neighbours and thier captial is ${capital}');
+        },
+
+        checkisland(){
+            const isIsland = false;
+            if(neighbours === 0){
+                isIsland = true;
+            }
+            else{
+                isIsland = false;
+            }
+        }
+        }
+
+    </script>
+</body>
+</html>
