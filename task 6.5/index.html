@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 6.5</title>
+</head>
+<body>
+    <script>
+        const object = {name: "John", age: 30};
+        const filledArray = Array(100).fill(object);
+        console.log(filledArray);
+
+        const numbersArray = Array.from({length: 100}, (_, i) => i + 1);
+        console.log(numbersArray);
+
+        const obj = {a:1, b:2, c:3, d:4};
+        const valuesArray = Object.values(obj);
+        console.log(valuesArray);
+
+        let arr = [1, 2, 3, 4];
+        const objFromArray = Object.assign({}, arr);
+        console.log(objFromArray);
+
+        console.log(Array.isArray(arr));
+
+        const originalArray = [1, 2, 3, 4];
+        const copyArray = [...originalArray];
+        console.log(copyArray);
+
+        const copyArray1 = originalArray.slice();
+        console.log(copyArray1);
+        const copyArray2 = Array.from(originalArray);
+        console.log(copyArray2);
+
+        originalArray = [1, 2, 3, 4];
+        copyArray = originalArray;
+        console.log(copyArray);
+
+
+    </script>
+</body>
+</html>
